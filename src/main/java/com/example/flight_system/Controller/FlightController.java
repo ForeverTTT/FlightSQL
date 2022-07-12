@@ -14,6 +14,9 @@ public class FlightController {
     @Autowired
     private FlightMapper flightMapper;
 
+    public FlightController() {
+    }
+
     @GetMapping
     public List<Flight> index() {
         return flightMapper.findAll();

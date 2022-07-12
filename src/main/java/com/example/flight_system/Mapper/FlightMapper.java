@@ -3,6 +3,11 @@ package com.example.flight_system.Mapper;
 import org.apache.ibatis.annotations.*;
 import com.example.flight_system.entity.Flight;
 import java.util.List;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 @Mapper
 public interface FlightMapper {
     @Select("SELECT * FROM flight_info")
